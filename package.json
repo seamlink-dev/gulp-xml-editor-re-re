@@ -1,5 +1,5 @@
 {
-  "name": "gulp-xml-editor",
+  "name": "gulp-xml-editor-re",
   "version": "2.2.1",
   "description": "A gulp plugin to edit XML document (libxmljs wrapper)",
   "license": "MIT",
@@ -9,8 +9,8 @@
     "xml",
     "libxmljs"
   ],
-  "homepage": "https://github.com/morou/gulp-xml-editor",
-  "bugs": "https://github.com/morou/gulp-xml-editor/issues",
+  "homepage": "https://github.com/BigMurry/gulp-xml-editor-re",
+  "bugs": "https://github.com/BigMurry/gulp-xml-editor-re",
   "author": {
     "name": "Kazuhiro Nakae",
     "email": "kazuhiro.nakae@gmail.com",
@@ -19,7 +19,7 @@
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/morou/gulp-xml-editor.git"
+    "url": "git://github.com/BigMurry/gulp-xml-editor-re.git"
   },
   "scripts": {
     "test": "mocha"
