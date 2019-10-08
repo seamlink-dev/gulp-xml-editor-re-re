@@ -9,7 +9,7 @@ gulp-xml-editor-re-re is a [gulp](https://github.com/wearefractal/gulp) plugin t
 
 ## Usage
 ```javascript
-var xeditor = require("gulp-xml-editor-re");
+var xeditor = require("gulp-xml-editor-re-re");
 
 /*
   edit XML document by using user specific object
