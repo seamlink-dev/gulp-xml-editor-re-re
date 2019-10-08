@@ -1,4 +1,4 @@
-# gulp-xml-editor-re
+# gulp-xml-editor-re-re
 
 gulp-xml-editor-re-re is a [gulp](https://github.com/wearefractal/gulp) plugin to edit XML document based on [libxmljs](https://github.com/polotek/libxmljs).
 
