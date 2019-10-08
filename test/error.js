@@ -3,7 +3,7 @@
 
 var xeditor = require('../');
 var gulp    = require('gulp');
-var gutil   = require('gulp-util');
+var Vinyl = require('vinyl');
 var fs      = require('fs');
 var should  = require('should');
 require('mocha');
@@ -26,7 +26,7 @@ it('should do path-through when input is null', function(done) {
       should(file.contents).eql(null);
       done();
     })
-    .write(new gutil.File({}));
+    .write(new Vinyl({}));
 });
 
 
@@ -36,7 +36,7 @@ it('should raise error when streaming input', function(done) {
       err.message.should.equal('Streaming is not supported');
       done();
     })
-    .write(new gutil.File({
+    .write(new Vinyl({
       contents: fs.createReadStream('test/test.xml')
     }));
 });

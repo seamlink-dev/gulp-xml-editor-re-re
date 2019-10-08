@@ -2,7 +2,7 @@
 
 var xmljs       = require('libxmljs');
 var through     = require('through2');
-var PluginError = require('gulp-util').PluginError;
+var PluginError = require('plugin-error');
 
 module.exports = function (editor, namespace) {
 
@@ -15,7 +15,7 @@ module.exports = function (editor, namespace) {
   function editByObject(xmlDoc, xmljs, ee) {
 
     editor.forEach(function(ed) {
-      var elem = (namespace == undefined) ? xmlDoc.get(ed.path) : xmlDoc.get(ed.path, namespace);
+      var elem = (typeof namespace === 'undefined') ? xmlDoc.get(ed.path) : xmlDoc.get(ed.path, namespace);
       if (!elem || !(elem instanceof xmljs.Element)) {
         ee.emit('error', new PluginError('gulp-xml-editor', 'Can\'t find element at "' + ed.path + '"'));
         return;
@@ -61,7 +61,7 @@ module.exports = function (editor, namespace) {
 
     // edit XML document
     try {
-      file.contents = new Buffer(editByXXX(xmljs.parseXmlString(file.contents.toString('utf8')), xmljs, this));
+      file.contents = Buffer.from(editByXXX(xmljs.parseXmlString(file.contents.toString('utf8')), xmljs, this));
     }
     catch (err) {
       this.emit('error', new PluginError('gulp-xml-editor', err));
@@ -72,4 +72,3 @@ module.exports = function (editor, namespace) {
   });
 
 };
-
