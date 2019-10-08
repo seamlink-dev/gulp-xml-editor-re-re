@@ -1,9 +1,9 @@
 # gulp-xml-editor-re
 
-gulp-xml-editor-re is a [gulp](https://github.com/wearefractal/gulp) plugin to edit XML document based on [libxmljs](https://github.com/polotek/libxmljs).
+gulp-xml-editor-re-re is a [gulp](https://github.com/wearefractal/gulp) plugin to edit XML document based on [libxmljs](https://github.com/polotek/libxmljs).
 
 ---
-**This is a forked package from [gulp-xml-editor](https://github.com/morou/gulp-xml-editor) with libxmljs upgraded to the latest version, since that package seems like deprecated.**
+**This is a forked package from [gulp-xml-editor-re](https://github.com/BigMurry/gulp-xml-editor-re) with upgraded dependencies, since that package seems like deprecated.**
 
 ---
 
