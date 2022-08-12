@@ -1,6 +1,6 @@
 /* jshint node: true */
 
-var xmljs       = require('libxmljs');
+var xmljs       = require('libxmljs2');
 var through     = require('through2');
 var PluginError = require('plugin-error');
 
