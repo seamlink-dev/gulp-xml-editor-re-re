@@ -9,23 +9,23 @@
     "xml",
     "libxmljs"
   ],
-  "homepage": "https://github.com/N0ps32/gulp-xml-editor-re-re",
-  "bugs": "https://github.com/N0ps32/gulp-xml-editor-re-re/issues",
+  "homepage": "https://github.com/seamlink-dev/gulp-xml-editor-re-re",
+  "bugs": "https://github.com/seamlink-dev/gulp-xml-editor-re-re/issues",
   "author": {
-    "name": "Benjamin Räder",
-    "email": "npm@raeder.dev",
-    "url": "https://github.com/N0ps32/"
+    "name": "Seamlink Dev",
+    "email": "info@seamlink.com",
+    "url": "https://github.com/seamlink-dev/"
   },
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/N0ps32/gulp-xml-editor-re-re.git"
+    "url": "git://github.com/seamlink-dev/gulp-xml-editor-re-re.git"
   },
   "scripts": {
     "test": "mocha"
   },
   "dependencies": {
-    "libxmljs": "^0.19.7",
+    "libxmljs2": "^0.30.1",
     "plugin-error": "~1.0.1",
     "through2": "~3.0.1",
     "vinyl": "^2.2.0"
